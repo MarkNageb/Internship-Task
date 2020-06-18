@@ -517,12 +517,13 @@ nav a {
 }
 .boxes input {
   height: 5vw;
-  font-size: 5vw;
+
   width: 5vw;
   border-radius: 50%;
-
+  font-size: small;
+  text-align: center;
   border: none;
-  margin-left: 15vw;
+  margin-left: 10vw;
 
   line-height: center;
   box-shadow: 0 0 25px rgba(60, 255, 0, 0.25);
