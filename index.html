@@ -3,25 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js" type="text/javascript"></script>
+    <script src="m.js" type="text/javascript"></script>
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+    <script src="./WebGazer/build/webgazer.js" type="text/javascript" async >    </script>
+    <script src="./bootstrap.min.js" type="text/javascript" >    </script>
+   
     <title>Home</title>
 
    
   </head>
-  <body>
+ 
+  <body onload="startTrack()">
+    <div class="red-dot" id="dot"></div>
+     <button onmouseover="startDown();" onmouseout="stop();" class="hover-down">
+    Hover Down
+  </button>
+  <button onmouseover="getLocation();" onmouseout="stop();" class="get-location">
+   LOCATION
+  </button>
+  <button onmouseover="startUp();" onmouseout="stop();" class="hover-up">
+    Hover Up
+  </button>
+<div class="all">
+ 
     <div class="img">
       <img class="babyfoot" src="/Images/babyfoot.png" alt="no img" />
 
@@ -218,103 +237,56 @@
       <hr />
     </div>
     <div class="boxes">
-      <input type="button" value="&#10094" />
-      <div class="the-review">
+      <input onclick="changePos()" type="button" value="&#10094" />
+    
+  <!--REVIEW 1-->
+      <div id="rev1" class="the-review">
         <h3 class="name">Jon L. Clarkson	</h3>
         <h6>a day ago</h6>
         <p class="date"></p>
         <div class="stars">
-         <span class="first-star">
-           <img src="./Images/star.png" alt="">
-         </span>
-         <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
+      <img src="./Images/Group 336.png" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor.</p>
         </div>
-
       </div>
-      <div class="the-review">
-        <h3 class="name">Jon L. Clarkson	</h3>
-        <h6>a day ago</h6>
-        <p class="date"></p>
-        <div class="stars">
-         <span class="first-star">
-           <img src="./Images/star.png" alt="">
-         </span>
-         <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor.</p>
-        </div>
-
-      </div>
-      <div class="the-review">
-        <h3 class="name">Jon L. Clarkson	</h3>
-        <h6>a day ago</h6>
-        <p class="date"></p>
-        <div class="stars">
-         <span class="first-star">
-           <img src="./Images/star.png" alt="">
-         </span>
-         <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor.</p>
-        </div>
-
-      </div>
-      <div class="the-review">
-        <h3 class="name">Jon L. Clarkson	</h3>
-        <h6>a day ago</h6>
-        <p class="date"></p>
-        <div class="stars">
-         <span class="first-star">
-           <img src="./Images/star.png" alt="">
-         </span>
-         <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <span>
-          <img src="./Images/star.png" alt="">
-        </span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor.</p>
-        </div>
-
-      </div>
+      
+      
+  <!--REVIEW 2-->
+  <div id="rev2" class="the-review">
+    <h3 class="name">Todd Jefferies	</h3>
+    <h6>10 days ago</h6>
+    <p class="date"></p>
+    <div class="stars">
+  <img src="./Images/Group 334.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor.</p>
+    </div>
+  </div>
+  
+  
+  <!--REVIEW 3-->
+  <div id="rev3" class="the-review">
+    <h3 class="name">Jackie Parker	</h3>
+    <h6>a month ago</h6>
+    <p class="date"></p>
+    <div class="stars">
+  <img src="./Images/Group 334.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor.</p>
+    </div>
+  </div>
+  
+  
+  <!--REVIEW 4-->
+  <div id="rev4" class="the-review">
+    <h3 class="name">Alvin  Clark	</h3>
+    <h6>a month ago</h6>
+    <p class="date"></p>
+    <div class="stars">
+  <img src="./Images/Group 336.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor.</p>
+    </div>
+  </div>
+  
+    
     </div>
 
     <div class="green-text">
@@ -383,5 +355,7 @@
       <hr>
       <p>Designed by @uiexpert - 2019</p>
     </footer>
+  </div>
+
   </body>
 </html>

@@ -3,6 +3,45 @@
   padding: 0;
   font-family: Roboto;
 }
+.get-location {
+  position: fixed;
+  left: 20px;
+  top: 35vh;
+}
+.red-dot {
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 9999999999;
+}
+.hover-down {
+  position: fixed;
+  left: 20px;
+  top: 70vh;
+  width: 50px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hover-down:hover {
+  background-color: #7cc576;
+}
+.hover-up {
+  position: fixed;
+  cursor: pointer;
+
+  left: 20px;
+  top: 10vh;
+  width: 50px;
+  z-index: 1000;
+}
+
+.hover-up:hover {
+  background-color: #7cc576;
+}
+
 .babyfoot {
   z-index: 1;
   right: 0;
@@ -235,7 +274,7 @@ nav a {
   top: 500px;
   float: left;
   background-color: #7cc576;
-  width: 550px;
+  max-width: 50vw;
   height: 250px;
   margin-right: 30px;
 
@@ -273,6 +312,7 @@ nav a {
 
 .carrier p {
   margin-top: 20px;
+  max-width: 20vw;
   color: #b0b0b0;
 }
 .carrier .carrier-title {
@@ -371,9 +411,12 @@ nav a {
 .green-area {
   position: relative;
   top: 800px;
-  height: 500px;
+  height: 70vh;
+
   width: 100%;
   background-color: #7cc576;
+}
+.green-area h3 {
 }
 .green-area hr {
   position: relative;
@@ -389,7 +432,7 @@ nav a {
 }
 
 .boss {
-  height: 500px;
+  max-height: 70vh;
   position: relative;
   float: right;
   top: 300px;
@@ -399,16 +442,16 @@ nav a {
 .text-area {
   position: relative;
   top: 30px;
-  width: 100%;
+  width: 90vw;
   margin-top: 10px;
   color: white;
-  font-size: 40px;
+  font-size: 3vw;
 
   text-align: center;
-  width: 900px;
+
   margin-right: auto;
   margin-left: auto;
-  line-height: 50px;
+  line-height: 4vw;
   font-weight: lighter;
   z-index: 4;
   margin-bottom: 100px;
@@ -463,6 +506,7 @@ nav a {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
   top: 650px;
 
   z-index: 100;
@@ -472,12 +516,13 @@ nav a {
   line-height: center;
 }
 .boxes input {
-  height: 60px;
-  width: 60px;
+  height: 5vw;
+  font-size: 5vw;
+  width: 5vw;
   border-radius: 50%;
-  font-size: 30px;
+
   border: none;
-  margin-left: 300px;
+  margin-left: 15vw;
 
   line-height: center;
   box-shadow: 0 0 25px rgba(60, 255, 0, 0.25);
@@ -485,6 +530,12 @@ nav a {
 
 .the-review h3 {
   margin: 30px 0 0 20px;
+}
+.the-review img {
+  margin-left: 20px;
+  height: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .the-review {
   width: 400px;
@@ -516,6 +567,7 @@ nav a {
 }
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 .green-text {
@@ -556,7 +608,7 @@ body {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 .links {
-  width: 70%;
+  width: 70vw;
   position: relative;
   top: 550px;
   margin-left: auto;
@@ -564,12 +616,14 @@ body {
   margin-bottom: 200px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .link1 {
   display: flex;
   flex-direction: column;
   line-height: 40px;
-  margin-left: 100px;
+  width: 10vw;
+  margin-left: 5vw;
 }
 .link1 h3 {
   color: #747474;
